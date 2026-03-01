@@ -24,25 +24,38 @@
     </style>
   </head>
   <body class="bg-[#F8FAFC]">
+
+    <!-- job application section design -->
    <header class="w-[80%] mx-auto ">
-    <h1 class="mb-5 font-bold text-[#002C5C] text-[36px]">Job Application Tracker</h1>
+    <h1 class="mb-5 mt-9 font-bold text-[#002C5C] text-[36px]">Job Application Tracker</h1>
     <div class="grid grid-cols-3 gap-4">
 
         <div class="bg-[#FFFFFF] p-5 rounded-[8px]">
             <p class="text-[#323B49] font-medium text-[14px]">Total</p>
-            <p class="text-[#002C5C] font-bold">8</p>
+            <p id="total" class="text-[#002C5C] font-bold">8</p>
         </div>
 
         <div class="bg-[#FFFFFF] p-5 rounded-[8px]">
        <p class="text-[#323B49] font-medium text-[14px]">Interview</p>
-       <p class="text-[#10B981]">0</p>
+       <p id="interview" class="text-[#10B981] font-bold">0</p>
         </div>
 
         <div class="bg-[#FFFFFF] p-5 rounded-[8px]">
             <p class="text-[#323B49] font-medium text-[14px]">Rejected</p>
-            <p class="text-[#EF4444]">0</p>
+            <p id="rejected" class="text-[#EF4444] font-bold">0</p>
         </div>
     </div>
+    <hr class="border-[#E6E7E9] mt-8">
    </header>
+   <main class="w-[80%] mx-auto ">
+    <h1 class="mb-5 mt-9 font-semibold text-[#002C5C] text-[20px]">Available Jobs</h1>
+    <div>
+        <button class="bg-[#3B82F6] text-white font-semibold text-[12px] rounded-[4px] py-3 px-8 " id="interview-btn">All</button>
+        <button class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-3 px-8 " id="all-btn">Interview</button>
+        <button class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-3 px-8 " id="rejected-btn">Rejected</button>
+    </div>
+
+   </main>
+   
   </body>
-</html>
+</html> 
