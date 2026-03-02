@@ -57,12 +57,24 @@
 
     <!-- Three Filter-btn  -->
     <div>
-        <button class="bg-[#3B82F6] text-white font-semibold text-[12px] rounded-[4px] py-[10px] px-8 " id="interview-btn">All</button>
-        <button class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 " id="all-btn">Interview</button>
-        <button class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 " id="rejected-btn">Rejected</button>
+        <button id="All-btn"
+         onclick="switchTab('All')"
+          class="bg-[#3B82F6]
+           text-white font-semibold 
+           text-[12px] 
+           rounded-[4px]
+            py-[10px] px-8">All</button>
+
+        <button 
+        id="Interview-btn" 
+        onclick="switchTab('Interview')" class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 " >Interview</button>
+
+        <button id="Rejected-btn"
+         class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 "  onclick="switchTab('Rejected')">Rejected</button>
     </div>
 
     <!-- all card section -->
+     <section id="allCards">
      <section class="card-number-1 mt-4 ">
         <div class="p-6 bg-[#FFFFFF] flex justify-between">
        <div>
@@ -77,7 +89,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -97,7 +109,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -117,7 +129,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -137,7 +149,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -157,7 +169,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -177,7 +189,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -197,7 +209,7 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
@@ -217,12 +229,27 @@
       </div>
       </div>
        <!-- for delete icon -->
-      <div>
+      <div class="border border-[#E6E7E9] w-8 h-8 flex align-center justify-center text-center pt-2 rounded-full">
          <i class="fa-solid fa-trash"></i>
       </div>
       </div>
      </section>
+    </section>
+
+    <!-- No jobs available -->
+     <section class="bg-[#FFFFFF] mt-6 mb-10 h-[400px]  flex justify-center items-center ">
+
+        <div class=" flex flex-col text-center flex justify-center items-center">
+        <img class="w-[100px] h-[100px] mb-4" src="jobs.png" alt="">
+         <h1 class="font-semibold text-[#002C5C] text-[24px]">No jobs available</h1>
+         <p class="text-[#64748B] text-[16px]">Check back soon for new job opportunities</p>
+         </div>
+         
+     </section>
 
    </main>
+
+   <!-- javascript file linked -->
+    <script src="javascript/script.js"></script>
   </body>
 </html> 
