@@ -27,6 +27,7 @@
     </style>
   </head>
   <body class="bg-[#F8FAFC]">
+  
 
     <!-- job application section design -->
    <header class="w-[80%] mx-auto ">
@@ -56,21 +57,32 @@
     <h1 class="mb-5 mt-9 font-semibold text-[#002C5C] text-[20px]">Available Jobs</h1>
 
     <!-- Three Filter-btn  -->
-    <div>
-        <button id="All-btn"
+     <!-- bg-[#3B82F6]
+    text-white font-semibold  -->
+
+    <div class="flex gap-3 ">
+        <button id="All-btn" 
          onclick="switchTab('All')"
-          class="bg-[#3B82F6]
-           text-white font-semibold 
-           text-[12px] 
-           rounded-[4px]
-            py-[10px] px-8">All</button>
+          class="bg-[#FFFFFF] 
+                 text-[#64748B]
+                 text-[12px] 
+                 py-[10px] px-8
+                 border border-[#E6E7E9]
+                 rounded-[4px] cursor-pointer"
+                 >All</button>
 
-        <button 
-        id="Interview-btn" 
-        onclick="switchTab('Interview')" class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 " >Interview</button>
+        <button  
+           id="Interview-btn" 
+            onclick="switchTab('Interview')" 
+            class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-3 border border-[#E6E7E9] cursor-pointer" >Interview
+         </button>
 
-        <button id="Rejected-btn"
-         class="bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-8 "  onclick="switchTab('Rejected')">Rejected</button>
+        <button
+         id="Rejected-btn" 
+         onclick="switchTab('Rejected')"
+         class="btn bg-[#FFFFFF] rounded-[4px] text-[#64748B] font-medium text-[12px] py-[10px] px-3 border border-[#E6E7E9] cursor-pointer" >Rejected
+      </button>
+
     </div>
 
     <!-- all card section -->
@@ -248,8 +260,13 @@
      </section>
 
    </main>
+   
+      console.log('the file is connected');
+    
 
    <!-- javascript file linked -->
-    <script src="javascript/script.js"></script>
+    <script src="script.js"></script>
+  
+   
   </body>
 </html> 
