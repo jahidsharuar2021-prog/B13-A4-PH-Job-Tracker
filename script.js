@@ -6,6 +6,7 @@ const tabInactive=["bg-[#FFFFFF]","text-[#64748B]"];
     const allcardContainer=document.getElementById('allCard-container');
     const interviewSection=document.getElementById('interview-section');
     const rejectedSection=document.getElementById('rejected-section');
+    console.log(interviewSection);
   
 
    // onclick button pabo
@@ -56,18 +57,22 @@ totalStat.innerText=allcardContainer.children.length;
 
 switchTab(currentTab);
 
-//  document.getElementById('allCard-container').addEventListener("click",function(event){
-//    console.log(event.target);
-// })
+ document.getElementById('allCard-container').addEventListener("click",function(event){
+const clickElement=event.target;
+const card = clickElement.closest(".card");
+
+if(clickElement.classList.contains('interview-cardbtn')){
+  interviewSection.appendChild(card);
+}
+if(clickElement.classList.contains('rejected-cardbtn')){
+  rejectedSection.appendChild(card);
+}
+if(clickElement.classList.contains('delete')){
+  // console.log('delete btn clicked');
+}
+
+}
+)
 
 
-const allCardContainer = document.getElementById('allCard-container');
 
-allcardContainer.addEventListener("click", function(event){
-    console.log("event.target:", event.target);
-    console.log("event.currentTarget:", event.currentTarget);
-    const card = event.target.closest('section[class^="card-number"]');
-    if(card){
-        console.log("Card clicked:", card.className);
-    }
-});
