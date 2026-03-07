@@ -17,4 +17,5 @@ const tabInactive=["bg-[#FFFFFF]","text-[#64748B]"];
     
     }
 }
+switchTab(currentTab);
 
