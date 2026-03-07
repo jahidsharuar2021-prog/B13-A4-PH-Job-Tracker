@@ -37,7 +37,7 @@
           <!-- total section job count -->
         <div class="bg-[#FFFFFF] cursor-pointer p-5 rounded-[8px]">
             <p class="text-[#323B49] font-medium text-[14px]">Total</p>
-            <p id="total" class="text-[#002C5C] font-bold">8</p>
+            <p id="total" class="text-[#002C5C] font-bold"></p>
         </div>
 
         <!-- total interview count -->
@@ -90,8 +90,8 @@
 
     </div>
 
-    <!-- all card section -->
-     <section id="allCards">
+    <!-- all cards section -->
+     <section id="allCard-container" class="">
      <section class="card-number-1 mt-4 ">
         <div class="p-6 bg-[#FFFFFF] flex justify-between">
        <div>
@@ -253,8 +253,14 @@
      </section>
     </section>
 
+    <!-- extra two section add korlam just understand needed -->
+    <div class="m-4">
+      <section id="interview-section" class=" font-bold text-[#002C5C]">INTERVIEW SECTION</section>
+      <section id="rejected-section" class=" font-bold text-[#002C5C]">REJECTED SECTION</section>
+    </div>
+
     <!-- No jobs available or emty slide -->
-     <section class="bg-[#FFFFFF] mt-6 mb-10 h-[400px]  flex justify-center items-center ">
+     <section class="bg-[#FFFFFF] hidden mt-6 mb-10 h-[400px]  flex justify-center items-center ">
 
         <div class=" flex flex-col text-center flex justify-center items-center">
         <img class="w-[100px] h-[100px] mb-4" src="jobs.png" alt="">
